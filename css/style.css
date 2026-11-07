@@ -1,0 +1,265 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Website body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdfb;
+    color: #202d2a;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background-color: #fffdfb;
+}
+
+/* Logo */
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #075b50;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #202d2a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #075b50;
+}
+
+/* Active Home Link */
+.nav-links .active {
+    color: #075b50;
+    border-bottom: 3px solid #075b50;
+    padding-bottom: 8px;
+}
+
+/* Right Side */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Search Icon */
+.search-icon {
+    font-size: 24px;
+    color: #075b50;
+    text-decoration: none;
+}
+
+/* Shopping Cart */
+.cart-icon {
+    position: relative;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Cart Number */
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #f45f87;
+    color: white;
+    font-size: 11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Booking Button */
+.booking-button {
+    background-color: #f45f87;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.booking-button:hover {
+    background-color: #e94470;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #fff8f0;
+    padding: 60px 8%;
+}
+
+/* Main Container */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left Side */
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+/* Heading Colors */
+.scoop {
+    display: block;
+    color: #202d2a;
+}
+
+.smile {
+    display: block;
+    color: #f45f87;
+}
+
+.repeat {
+    display: block;
+    color: #075b50;
+}
+
+/* Description */
+.hero-content p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    max-width: 420px;
+}
+
+/* Button */
+.hero-button {
+    display: inline-block;
+    background-color: #f45f87;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #e94470;
+}
+
+/* Right Side */
+.hero-image {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+}
+
+/* =========================
+   FLAVORS SECTION
+========================= */
+.flavors-section {
+    background-color: #ffffff;
+    padding: 60px 8%;
+}
+
+/* Section Heading */
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    color: #f45f87;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #202d2a;
+    margin-top: 5px;
+}
+
+/* Flavor Cards Container */
+.flavor-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Card */
+.flavor-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Circular Image Backgrounds */
+.flavor-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.flavor-circle:hover {
+    transform: scale(1.05);
+}
+
+/* Soft color variations for circles */
+.pink-bg { background-color: #fce4ec; }
+.light-pink-bg { background-color: #ffebee; }
+.yellow-bg { background-color: #fef9e7; }
+.green-bg { background-color: #e8f5e9; }
+
+/* Card Image */
+.flavor-circle img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Card Title */
+.flavor-card h3 {
+    color: #202d2a;
+    font-size: 16px;
+    font-weight: 600;
+}

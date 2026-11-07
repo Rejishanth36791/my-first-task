@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Antix Artisan Ice Cream</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+<!-- Navigation Bar -->
+<header class="navbar">
+    <!-- Logo -->
+    <div class="logo">Antix</div>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Right Side Icons and Button -->
+    <div class="nav-right">
+        <!-- Search Icon -->
+        <a href="#search" class="search-icon">⌕</a>
+
+        <!-- Shopping Cart -->
+        <a href="#cart" class="cart-icon">
+            🛒
+            <span class="cart-count">1</span>
+        </a>
+
+        <!-- Booking Button -->
+        <a href="#booking" class="booking-button">
+            Book a table
+        </a>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+    <div class="hero-container">
+        <!-- Left Side -->
+        <div class="hero-content">
+            <h1>
+                <span class="scoop">SCOOP.</span>
+                <span class="smile">SMILE.</span>
+                <span class="repeat">REPEAT!</span>
+            </h1>
+
+            <p>
+                From classic favorites to exciting new flavors,
+                every scoop is made to make you smile.
+            </p>
+
+            <a href="#contact" class="hero-button">
+                Join Our Team →
+            </a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="hero-image">
+            <img src="images/hero-icecream.jpg" alt="Delicious Ice Cream">
+        </div>
+    </div>
+</section>
+
+<!-- Flavors Section -->
+<section class="flavors-section" id="flavors">
+    <div class="section-heading">
+        <span class="sub-heading">Explore</span>
+        <h2>Our Delicious Creations</h2>
+    </div>
+
+    <div class="flavor-container">
+        <!-- Chocolate -->
+        <div class="flavor-card">
+            <div class="flavor-circle pink-bg">
+                <img src="images/chocolate.jpg" alt="Chocolate Ice Cream">
+            </div>
+            <h3>Chocolate Fudge</h3>
+        </div>
+
+        <!-- Strawberry -->
+        <div class="flavor-card">
+            <div class="flavor-circle light-pink-bg">
+                <img src="images/strawberry.jpg" alt="Strawberry Ice Cream">
+            </div>
+            <h3>Strawberry Swirl</h3>
+        </div>
+
+        <!-- Vanilla -->
+        <div class="flavor-card">
+            <div class="flavor-circle yellow-bg">
+                <img src="images/vanilla.jpg" alt="Vanilla Ice Cream">
+            </div>
+            <h3>Classic Vanilla</h3>
+        </div>
+
+        <!-- Pistachio -->
+        <div class="flavor-card">
+            <div class="flavor-circle green-bg">
+                <img src="images/pistachio.jpg" alt="Pistachio Ice Cream">
+            </div>
+            <h3>Pistachio Bliss</h3>
+        </div>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
