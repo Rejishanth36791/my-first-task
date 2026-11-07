@@ -184,20 +184,28 @@ body {
 
 .hero-image img {
     width: 100%;
-    max-width: 420px;
+    max-width: 380px;
+    max-height: 500px; 
+    object-fit: cover;
     border-radius: 20px;
 }
 
-/* =========================
-   FLAVORS SECTION
-========================= */
+/* FLAVORS SECTION */
 .flavors-section {
     background-color: #ffffff;
     padding: 60px 8%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -40px; 
+    position: relative;
+    z-index: 10;
 }
 
-/* Section Heading */
-.section-heading {
+/* Header row layout*/
+.flavors-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 40px;
 }
 
@@ -213,29 +221,75 @@ body {
     margin-top: 5px;
 }
 
+.section-desc {
+    max-width: 320px;
+}
+
+.section-desc p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Carousel layout with arrows */
+.carousel-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Slider Arrow Buttons */
+.slider-arrow {
+    background-color: #ffffff;
+    border: 1px solid #e0d8d0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #202d2a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.3s;
+}
+
+.slider-arrow:hover {
+    background-color: #f45f87;
+    color: white;
+    border-color: #f45f87;
+}
+
 /* Flavor Cards Container */
 .flavor-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
 
 /* Individual Card */
 .flavor-card {
     text-align: center;
-    cursor: pointer;
+    flex-shrink: 0;
 }
 
 /* Circular Image Backgrounds */
 .flavor-circle {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    border: 3px solid rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
@@ -243,23 +297,75 @@ body {
     transform: scale(1.05);
 }
 
-/* Soft color variations for circles */
+/* Soft background color variations for each circle */
+.teal-bg { background-color: #e0f4f1; }
+.yellow-bg { background-color: #fef1d1; }
 .pink-bg { background-color: #fce4ec; }
-.light-pink-bg { background-color: #ffebee; }
-.yellow-bg { background-color: #fef9e7; }
 .green-bg { background-color: #e8f5e9; }
+.light-pink-bg { background-color: #fce4ec; }
 
 /* Card Image */
 .flavor-circle img {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 /* Card Title */
 .flavor-card h3 {
     color: #202d2a;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
+}
+
+/*RATING & STRAWBERRY*/
+
+.hero-image {
+    position: relative;
+}
+
+/* Rating Badge Styles */
+.rating-badge {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    z-index: 5;
+}
+
+.rating-num {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: #202d2a;
+}
+
+.stars {
+    color: #ffb830;
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.rating-sub {
+    display: block;
+    font-size: 11px;
+    color: #888;
+}
+
+/* Strawberry Styles */
+.floating-strawberry {
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    width: 65px !important;
+    height: 65px !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    z-index: 5;
 }
