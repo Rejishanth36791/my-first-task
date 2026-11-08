@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antix Artisan Ice Cream</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -43,10 +44,10 @@
     </div>
 </header>
 
-<!-- Hero Section -->
+<!--Hero Section-->
 <section class="hero-section" id="home">
     <div class="hero-container">
-        <!-- Left Side -->
+        <!--Left Side Content-->
         <div class="hero-content">
             <h1>
                 <span class="scoop">SCOOP.</span>
@@ -64,30 +65,22 @@
             </a>
         </div>
 
-         <!-- Right Side -->
-<div class="hero-image">
-    <!-- RATING BADGE -->
-    <div class="rating-badge">
-        <span class="rating-num">4.9</span>
-        <div class="stars">★★★★★</div>
-        <span class="rating-sub">since 1995</span>
-    </div>
-
-    <!-- hero image -->
-    <img src="images/hero-icecream.jpg" alt="Delicious Ice Cream">
-
-    <!-- STRAWBERRY slice -->
-    <img src="images/strawberry-slice.jpg" alt="Strawberry" class="floating-strawberry">
-</div>
-
+        <!--Right Side Overlay Badge-->
+        <div class="hero-badge-wrap">
+            <div class="rating-badge">
+                <span class="rating-num">4.9</span>
+                <div class="stars">★★★★★</div>
+                <span class="rating-sub">since 1995</span>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Flavors Section -->
+<!--Flavors Section-->
 <section class="flavors-section" id="flavors">
     <div class="flavors-wrapper">
         
-        <!-- Top Header Part (Title on left, Description on right) -->
+        <!--Top Header Part-->
         <div class="flavors-header-row">
             <div class="section-heading">
                 <span class="sub-heading">Explore</span>
@@ -98,7 +91,7 @@
             </div>
         </div>
 
-        <!-- Carousel Container -->
+        <!--Carousel Container-->
         <div class="carousel-box">
             <button class="slider-arrow left-arrow"><</button>
             
@@ -148,6 +141,330 @@
         </div>
     </div>
 </section>
+
+<!--Promo & Discount Section-->
+<section class="promo-section" id="shop">
+    <div class="promo-container">
+        
+        <!-- Left Banner -->
+        <div class="promo-card teal-card">
+            <div class="promo-info">
+                <h2>
+                    <span class="white-text">SWEET</span>
+                    <span class="yellow-text">DELIGHT!</span>
+                </h2>
+                <a href="#order" class="btn-order">Order Now</a>
+                <p>From warm treats to indulgent creations, we serve happiness in every bite.</p>
+            </div>
+            
+            <div class="promo-image">
+                <img src="images/chocolate-icecream-bar.jpg" alt="Sweet Delight Bar">
+            </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="discount-card">
+            <div class="discount-header">
+                <h3><span class="pink-percent">20%</span> DISCOUNT</h3>
+            </div>
+
+            <!-- Item 1: Doughnut -->
+            <div class="discount-item">
+                <div class="item-thumb">
+                    <img src="images/doughnut.jpg" alt="Fresh Doughnut">
+                </div>
+                <div class="item-details">
+                    <h4>Fresh Doughnut</h4>
+                    <span>Warm artisanal glaze</span>
+                </div>
+                <div class="item-pricing">
+                    <p class="price">$9.99 <span class="unit">each</span></p>
+                    <button class="add-btn" type="button">+</button>
+                </div>
+            </div>
+
+            <!-- Item 2: Choco Pretzel -->
+            <div class="discount-item">
+                <div class="item-thumb">
+                    <img src="images/pretzel.jpg" alt="Choco Pretzel">
+                </div>
+                <div class="item-details">
+                    <h4>Choco Pretzel</h4>
+                    <span>Dark chocolate drizzle</span>
+                </div>
+                <div class="item-pricing">
+                    <p class="price">$9.99 <span class="unit">each</span></p>
+                    <button class="add-btn" type="button">+</button>
+                </div>
+            </div>
+
+            <!-- View All Deals Button -->
+            <a href="#deals" class="btn-deals">View All Deals</a>
+        </div>
+
+    </div>
+</section>
+
+<!--Features / Benefits Section-->
+<section class="features-section">
+    <div class="features-container">
+        
+        <!--Feature 1: Natural Ingredients-->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="images/icon-leaf.jpg" alt="Natural Ingredients">
+            </div>
+            <h3>Natural Ingredients</h3>
+            <p>Made with real fruits, nuts & dairy.</p>
+        </div>
+
+        <!--Feature 2: Handcrafted-->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="images/icon-chef.jpg" alt="Handcrafted">
+            </div>
+            <h3>Handcrafted</h3>
+            <p>Small-batch ice cream with love.</p>
+        </div>
+
+        <!--Feature 3: Fast Delivery-->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="images/icon-truck.jpg" alt="Fast Delivery">
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Quick & cold delivery to your door.</p>
+        </div>
+
+        <!--Feature 4: Eco Friendly-->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="images/icon-recycle.jpg" alt="Eco Friendly">
+            </div>
+            <h3>Eco Friendly</h3>
+            <p>Sustainable packaging for a better planet.</p>
+        </div>
+
+    </div>
+
+    <!--Pagination Dots-->
+    <div class="feature-dots">
+        <span class="dot active-dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<!--Our Story Section-->
+<section class="story-section" id="about">
+    <div class="story-card">
+        
+        <!--Left Content-->
+        <div class="story-content">
+            <span class="story-subtitle">Our Story</span>
+            <h2>Crafted with Passion,<br>Served with Love</h2>
+            <p>
+                What started as a small kitchen experiment is now your favorite ice cream destination. Every morning before dawn, our master churners blend pasture-raised milk with pure vanilla beans and handpicked orchard fruits.
+            </p>
+            <a href="#story" class="btn-story">Read Our Story →</a>
+        </div>
+
+        <!--Right Image-->
+        <div class="story-image-wrap">
+            <img src="images/team-story.jpg" alt="Antix Ice Cream Team" class="story-img">
+            
+            <!--Floating Badge-->
+            <div class="artisanal-badge">
+                <span class="badge-num">100%</span>
+                <span class="badge-label">Artisanal</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Testimonials Section-->
+<section class="testimonials-section">
+    <!-- Header -->
+    <div class="testimonials-header">
+        <span class="testimonials-sub">Customer Favorites</span>
+        <h2>Loved by Thousands</h2>
+    </div>
+
+    <!--Carousel,Left & Right Arrows-->
+    <div class="testimonials-wrapper">
+        <!-- Left Side Arrow Button -->
+        <button class="test-arrow left-test-arrow" type="button">‹</button>
+
+        <!--Testimonial Cards Container-->
+        <div class="testimonials-container">
+            
+            <!--Card 1-->
+            <div class="testimonial-card">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">
+                    "The best ice cream I've ever had! The Salted Caramel is pure magic. We visit every single weekend."
+                </p>
+                <div class="test-author">
+                    <div class="avatar pink-avatar">ER</div>
+                    <div class="author-info">
+                        <h4>Emily R.</h4>
+                        <span>Verified Foodie</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 2-->
+            <div class="testimonial-card">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">
+                    "Absolutely delicious! Delivery arrived frozen solid in sustainable thermal insulation. 10/10."
+                </p>
+                <div class="test-author">
+                    <div class="avatar teal-avatar">JT</div>
+                    <div class="author-info">
+                        <h4>James T.</h4>
+                        <span>Ice Cream Lover</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="testimonial-card">
+                <div class="test-stars">★★★★★</div>
+                <p class="test-text">
+                    "Fresh, creamy & simply perfect! Pistachio Bliss is legendary. Our kids adore the crispy waffle bowls."
+                </p>
+                <div class="test-author">
+                    <div class="avatar orange-avatar">SM</div>
+                    <div class="author-info">
+                        <h4>Sarah M.</h4>
+                        <span>Local Resident</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Right Side Arrow Button-->
+        <button class="test-arrow right-test-arrow" type="button">›</button>
+    </div>
+</section>
+
+<!--Community Section-->
+<section class="community-section">
+    <div class="community-header">
+        <span class="community-sub">Sweet Moments</span>
+        <h2>Shared With Our Community</h2>
+        <div class="community-tag-badge">
+            Tag us @antix_Icecream to get featured!
+        </div>
+    </div>
+
+    <!--Community Gallery-->
+    <div class="community-gallery">
+        <div class="gallery-item">
+            <img src="images/community-1.jpg" alt="Community Member 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/community-2.jpg" alt="Community Member 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/community-3.jpg" alt="Community Member 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/community-4.jpg" alt="Community Member 4">
+        </div>
+    </div>
+</section>
+
+<!--Newsletter Section-->
+<section class="newsletter-section">
+    <div class="newsletter-card">
+        
+        <!--Left Side: Subscription Form-->
+        <div class="newsletter-content" id="contact">
+            <h2>Stay Sweet with Antix!</h2>
+            <p>Get updates on new flavors, special offers & sweet surprises.</p>
+            
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <div class="input-wrap">
+                    <span class="mail-icon">✉</span>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+
+        <!--Right Side: Image-->
+        <div class="newsletter-image">
+            <img src="images/newsletter-icecream.png" alt="Ice cream scoops">
+        </div>
+
+    </div>
+</section>
+
+<!--Footer Section-->
+<footer class="footer-section">
+    <div class="footer-container">
+        
+        <!--Column 1: Brand Info-->
+        <div class="footer-col footer-brand">
+            <div class="footer-logo">Antix</div>
+            <p>Scooping happiness one cone at a time.</p>
+        </div>
+
+        <!--Column 2: Quick Links-->
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#flavors">Our Flavors</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Column 3: Help & Support-->
+        <div class="footer-col">
+            <h4>Help & Support</h4>
+            <ul>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#shipping">Shipping Info</a></li>
+                <li><a href="#returns">Returns</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!--Column 4: Follow Us-->
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+
+    <a href="https://www.instagram.com/" class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/" class="social-link">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.youtube.com/" class="social-link">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+</div>
+        </div>
+
+    </div>
+
+    <!--Copyright Wave Bottom-->
+    <div class="footer-bottom">
+        <p>© 2026 Antix. All Rights Reserved.</p>
+    </div>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
