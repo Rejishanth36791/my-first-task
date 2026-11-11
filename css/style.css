@@ -427,20 +427,23 @@ body {
     flex: 1.6;
     background-color: #0d836b;
     border-radius: 28px;
-    padding: 35px 40px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     position: relative;
     overflow: hidden;
     color: #ffffff;
 }
 
 .promo-info {
-    max-width: 55%;
+   flex: 1;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
+    z-index: 2;
 }
 
 .promo-info h2 {
@@ -484,16 +487,18 @@ body {
 }
 
 .promo-image {
-    width: 40%;
+    flex: 1;
+    height: 100%;
+    min-height: 100%;
     display: flex;
-    justify-content: center;
 }
 
 .promo-image img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 20px;
-    object-fit: cover;
+   width: 100%;
+    height: 100%;
+    object-fit: cover;                  
+    border-radius: 0;                
+    display: block;
 }
 
 /* RIGHT DISCOUNT CARD */
